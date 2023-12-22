@@ -1,10 +1,10 @@
 'use client'
 
+import { LoginContainer } from "@/containers";
+
 const Page = () => {
     return (
-        <div>
-           Page 
-        </div>
+        <LoginContainer/>
     );
 }
 

@@ -1,11 +1,9 @@
 'use client'
 
+import { NotFoundContainer } from "@/containers";
+
 const Page = () => {
-    return (
-        <div>
-           Not found 
-        </div>
-    );
+    return <NotFoundContainer/>
 }
 
 export default Page;

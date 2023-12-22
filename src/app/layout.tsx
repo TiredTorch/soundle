@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { playfairFont } from '@/fonts'
+import { alfaFont, playfairFont } from '@/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -7,14 +7,20 @@ export const metadata: Metadata = {
   description: 'Soundle description',
 }
 
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
 }) {
+
   return (
     <html lang="en">
-      <body className={playfairFont.className}>{children}</body>
+      <body 
+        className={`${playfairFont.variable} ${alfaFont.variable}`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
