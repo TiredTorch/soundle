@@ -1,5 +1,21 @@
 {
-    "TXT_LOGINPAGE": {
-        "TITLE": "Log in your account"
+    "TXT_FORMS": {
+        "REQUIRED": "Field is required",
+        "EMAIL": "Should be a valid email"
+    },
+    "TXT_LOGIN_PAGE": {
+        "TITLE": "Log in your account",
+        "BUTTON": "Log in",
+        "LOGIN_FIELD": "Login",
+        "PASSWORD_FIELD": "Password",
+        "NAVIGATE_TO_REGISTER": "Or create account"
+    },
+    "TXT_REGISTER_PAGE": {
+        "TITLE": "Create Personal Account",
+        "BUTTON": "Register",
+        "USERNAME_FIELD": "Username",
+        "EMAIL_FIELD": "Email",
+        "PASSWORD_FIELD": "Password",
+        "NAVIGATE_TO_LOGIN": "Or create account"
     }
 }

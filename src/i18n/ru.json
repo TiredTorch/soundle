@@ -1,5 +1,12 @@
 {
-    "TXT_LOGINPAGE": {
-        "TITLE": "Войдите в свой аккаунт"
+    "TXT_FORMS": {
+        "REQUIRED": "Поле должно быть заполненым"
+    },
+    "TXT_LOGIN_PAGE": {
+        "TITLE": "Войдите в аккаунт",
+        "BUTTON": "Войти",
+        "LOGIN_FIELD": "Логин",
+        "PASSWORD_FIELD": "Пароль",
+        "NAVIGATE_TO_REGISTER": "Или создайте аккаунт"
     }
 }

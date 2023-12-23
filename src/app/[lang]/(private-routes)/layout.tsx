@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image"
 import { AuthFormWrapper } from "@/components"
 import authBackground from "@/assets/images/auth-background.png"

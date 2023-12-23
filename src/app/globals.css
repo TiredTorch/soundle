@@ -10,4 +10,5 @@ body {
     max-w-max-view
     bg-snd-gray-200
     text-snd-gray-100
+    overflow-hidden
 }

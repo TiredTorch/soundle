@@ -1,3 +1,3 @@
-import { FC, HTMLAttributes } from "react"
+import { FC, ButtonHTMLAttributes } from "react"
 
-export type AuthButtonComponentProps = FC<HTMLAttributes<HTMLButtonElement>>
+export type AuthButtonComponentProps = FC<ButtonHTMLAttributes<HTMLButtonElement>>

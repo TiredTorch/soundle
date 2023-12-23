@@ -8,11 +8,13 @@ export const TextArea: TextAreaComponentProps = ({
     value,
     label,
     error,
-    placeholder
+    placeholder,
+    className,
+    ...rest
 }) => {
     return (
         <div
-            className="w-full flex flex-col font-playfair"
+            className={`w-full flex flex-col font-playfair ${className}`}
         >
             {label && (
                 <label
@@ -22,6 +24,8 @@ export const TextArea: TextAreaComponentProps = ({
                 </label>
             )}
             <input
+                {...rest}
+                autoComplete="off"
                 value={value}
                 onChange={onChange}
                 placeholder={placeholder}

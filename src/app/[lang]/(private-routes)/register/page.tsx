@@ -1,10 +1,10 @@
 'use client'
 
+import { RegisterContainer } from "@/containers";
+
 const Page = () => {
     return (
-        <div>
-           Page 
-        </div>
+        <RegisterContainer/>
     );
 }
 
