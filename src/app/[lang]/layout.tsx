@@ -1,6 +1,8 @@
+
 import type { Metadata } from 'next'
 import { alfaFont, playfairFont } from '@/fonts'
 import './globals.css'
+import { StoreProvider } from '@/providers'
 
 export const metadata: Metadata = {
   title: 'Soundle',
@@ -19,7 +21,9 @@ export default function RootLayout({
       <body 
         className={`${playfairFont.variable} ${alfaFont.variable}`}
       >
-        {children}
+        <StoreProvider>
+          {children}
+        </StoreProvider>
       </body>
     </html>
   )

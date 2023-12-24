@@ -5,6 +5,6 @@ export enum AppRoutes {
     FRIENDS = "/friends",
     LIBRARY = "/lib",
     WORKSHOP = "/workshop",
-    SETTING = "/setting",
-    DASHBOARD = "/dashboard",
+    SETTING = "/settings",
+    DASHBOARD = "/",
 }

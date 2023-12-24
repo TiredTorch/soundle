@@ -12,7 +12,7 @@ export const NotFoundContainer = () => {
         <section
             className="min-w-max-view min-h-max-view flex justify-center items-center"
         >
-            <div
+            {/* <div
                 className="min-h-full min-w-full absolute top-0 right-0 z-[-1]"
             >
                 <Image
@@ -38,7 +38,7 @@ export const NotFoundContainer = () => {
                         Return to the website
                     </Typography>
                 </Link>
-            </div>
+            </div> */}
         </section>
     )
 }

@@ -1,10 +1,10 @@
 'use client'
 
+import { DashboardContainer } from "@/containers";
+
 const Page = () => {
     return (
-        <div>
-           a
-        </div>
+        <DashboardContainer/>
     );
 }
 
