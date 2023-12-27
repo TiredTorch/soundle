@@ -1,10 +1,10 @@
 'use client'
 
+import { ProfileContainer } from "@/containers";
+
 const Page = () => {
     return (
-        <div>
-           Page 
-        </div>
+        <ProfileContainer/>
     );
 }
 

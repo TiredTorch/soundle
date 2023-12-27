@@ -17,5 +17,17 @@
         "EMAIL_FIELD": "Email",
         "PASSWORD_FIELD": "Password",
         "NAVIGATE_TO_LOGIN": "Or create account"
+    },
+    "TXT_FRIENDS_PAGE": {
+        "SEARCH_TITLE": "Search",
+        "SEND_MESSAGE": "Send message"
+    },
+    "TXT_WORKSHOP_PAGE": {
+        "CREATE_SONG_TITLE": "Create song right here",
+        "UPLOAD_SONG_TITLE": "Upload song",
+        "AUTHOR_NAME": "Author name",
+        "SONG_NAME": "Song name",
+        "ALBUM_NAME": "Album name",
+        "PUBLISH_BUTTON": "Publish"
     }
 }

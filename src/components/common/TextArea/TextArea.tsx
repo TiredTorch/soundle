@@ -10,6 +10,7 @@ export const TextArea: TextAreaComponentProps = ({
     error,
     placeholder,
     className,
+    inputClassname,
     ...rest
 }) => {
     return (
@@ -29,7 +30,7 @@ export const TextArea: TextAreaComponentProps = ({
                 value={value}
                 onChange={onChange}
                 placeholder={placeholder}
-                className="text-[32px] bg-transparent border-b-[1px] border-b-snd-gray-200 outline-none shadow-none mt-6"
+                className={`text-[32px] bg-transparent border-b-[1px] border-b-snd-gray-200 outline-none shadow-none mt-6 ${inputClassname}`}
             />
             {error && (
                 <span

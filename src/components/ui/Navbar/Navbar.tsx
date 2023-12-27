@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useCallback, useMemo } from "react"
 import { AppRoutes } from "@/routes"
 import NavbarItem from "./NavbarItem/NavbarItem"
 import dashboardIcon from "@/assets/icons/dashboardLinkIcon.png"
@@ -8,8 +8,19 @@ import libraryIcon from "@/assets/icons/libraryLinkIcon.png"
 import workshopIcon from "@/assets/icons/workshopLinkIcon.png"
 import settingsIcon from "@/assets/icons/settingsLinkIcon.png"
 import logoutIcon from "@/assets/icons/logoutLinkIcon.png"
+import { resetUser, useTypedDispatch } from "@/redux"
 
 export const Navbar = () => {
+  const dispatch = useTypedDispatch()
+
+  const handleLogout = useCallback(
+    () => {
+      dispatch(resetUser())
+    },
+    [dispatch],
+  )
+  
+
   const navbarItem = useMemo(() => [
     {
       image: dashboardIcon,
@@ -44,9 +55,9 @@ export const Navbar = () => {
     {
       image: logoutIcon,
       position: "bottom",
-      onClick: console.log
+      onClick: handleLogout
     }
-  ], [])
+  ], [handleLogout])
 
   return (
     <nav

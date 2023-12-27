@@ -23,7 +23,7 @@ export const DashboardContainer = () => {
 
     return (
         <div
-            className="w-full flex gap-[50px] overflow-y-auto "
+            className="w-full flex gap-[50px] overflow-y-auto p-[50px] pb-[120px]"
         >
             <div
                 className="flex flex-col gap-[30px] w-1/2"

@@ -1,6 +1,6 @@
-import { axiosBaseQuery } from "../../axios/baseQuery/baseQuery";
-import { PostDto } from "@/types";
 import { createApi } from "@reduxjs/toolkit/query/react";
+import { PostDto } from "@/types";
+import { axiosBaseQuery } from "../../axios/baseQuery/baseQuery";
 
 export const postsService = createApi({
     reducerPath: "postsService",

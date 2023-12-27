@@ -1,2 +1,5 @@
 export * from "./LoginForm/LoginForm"
 export * from "./RegisterForm/RegisterForm"
+export * from "./SearchForm/SearchForm"
+export * from "./SendMessageForm/SendMessageForm"
+export * from "./PublishSongForm/PublishSongForm"

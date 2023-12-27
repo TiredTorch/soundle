@@ -12,3 +12,23 @@ body {
     text-snd-gray-100
     overflow-hidden
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #878089 #474747;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #474747;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #878089;
+    border-radius: 10px;
+  }

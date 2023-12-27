@@ -1,10 +1,10 @@
 'use client'
 
+import { WorkshopContainer } from "@/containers";
+
 const Page = () => {
     return (
-        <div>
-           Page 
-        </div>
+        <WorkshopContainer/>
     );
 }
 

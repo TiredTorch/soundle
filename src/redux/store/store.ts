@@ -2,12 +2,20 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { authSlice } from "../slices/authSlice";
-import { postsService } from "../api/postsService/postsService";
+import { 
+    authSlice 
+} from "../slices";
+import { 
+    postsService, 
+    friendsService,
+    userService
+} from "../api";
 
 const reducers = {
     [authSlice.name]: authSlice.reducer,
-    [postsService.reducerPath]: postsService.reducer
+    [userService.reducerPath]: userService.reducer,
+    [postsService.reducerPath]: postsService.reducer,
+    [friendsService.reducerPath]: friendsService.reducer,
 }
 
 const combinedReducer = combineReducers<typeof reducers>(reducers);
@@ -16,7 +24,9 @@ export const appStore = configureStore({
     reducer: combinedReducer,
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat([
-        postsService.middleware
+        userService.middleware,
+        postsService.middleware,
+        friendsService.middleware
     ])
 })
 

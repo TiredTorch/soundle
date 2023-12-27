@@ -1,10 +1,10 @@
 'use client'
 
+import { FriendsContainer } from "@/containers";
+
 const Page = () => {
     return (
-        <div>
-           Page 
-        </div>
+        <FriendsContainer/>
     );
 }
 
