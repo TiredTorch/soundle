@@ -11,6 +11,7 @@ export const TextArea: TextAreaComponentProps = ({
     placeholder,
     className,
     inputClassname,
+    errorClassname,
     ...rest
 }) => {
     return (
@@ -34,7 +35,7 @@ export const TextArea: TextAreaComponentProps = ({
             />
             {error && (
                 <span
-                    className="text-snd-red-300 text-[20px]"
+                    className={`text-snd-red-300 text-[20px] ${errorClassname}`}
                 >
                     {error}
                 </span>

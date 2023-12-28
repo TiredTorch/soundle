@@ -28,6 +28,14 @@
         "AUTHOR_NAME": "Author name",
         "SONG_NAME": "Song name",
         "ALBUM_NAME": "Album name",
-        "PUBLISH_BUTTON": "Publish"
+        "PUBLISH_BUTTON": "Publish",
+        "SELECT_SONG": "Select song"
+    },
+    "TXT_SETTING_PAGE": {
+        "MUTE_SOUND": "Mute sound in workshop",
+        "ENABLE_NOTIFICATIONS": "Enable notifications",
+        "SHOW_HISTORY": "Show listening history",
+        "ADORABLE": "Be the most adorable person",
+        "ENABLE_VISUALISATOR": "Enable visualisator"
     }
 }

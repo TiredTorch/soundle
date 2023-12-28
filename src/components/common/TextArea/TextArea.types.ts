@@ -4,4 +4,5 @@ export type TextAreaComponentProps = FC<InputHTMLAttributes<HTMLInputElement> & 
     label?: string;
     error?: string;
     inputClassname?: string;
+    errorClassname?: string;
 }>

@@ -3,7 +3,8 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { 
-    authSlice 
+    authSlice, 
+    configSlice 
 } from "../slices";
 import { 
     postsService, 
@@ -13,6 +14,7 @@ import {
 
 const reducers = {
     [authSlice.name]: authSlice.reducer,
+    [configSlice.name]: configSlice.reducer,
     [userService.reducerPath]: userService.reducer,
     [postsService.reducerPath]: postsService.reducer,
     [friendsService.reducerPath]: friendsService.reducer,
