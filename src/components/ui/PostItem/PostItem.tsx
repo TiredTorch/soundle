@@ -17,7 +17,7 @@ export const PostItem: FC<PostItemProps> = ({
 }) => {
   return (
     <div
-        className="bg-snd-gray-500 w-full rounded-2xl overflow-hidden"
+        className="bg-snd-gray-500 w-full rounded-2xl overflow-hidden inline-table"
     >
         <div
             className="bg-snd-gray-800 flex justify-between"
@@ -28,18 +28,18 @@ export const PostItem: FC<PostItemProps> = ({
                 {author}
             </Typography>
             <div
-                className="flex justify-between gap-[200px]"
+                className="flex justify-between gap-[50px]"
             >
                 <div
                     className="flex gap-[50px] items-center"
                 >
                     <button
-                        className="rounded-full bg-snd-gray-150 w-[70px] h-[70px]"
+                        className="rounded-full bg-snd-gray-150 w-[30px] h-[30px]"
                     >
 
                     </button>
                     <button
-                        className="rounded-full bg-snd-gray-150 w-[70px] h-[70px]"
+                        className="rounded-full bg-snd-gray-150 w-[30px] h-[30px]"
                     >
 
                     </button>

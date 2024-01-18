@@ -1,10 +1,9 @@
 'use client'
+import { LibraryContainer } from "@/containers";
 
 const Page = () => {
     return (
-        <div>
-           Page 
-        </div>
+        <LibraryContainer/>
     );
 }
 

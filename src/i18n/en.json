@@ -22,6 +22,10 @@
         "SEARCH_TITLE": "Search",
         "SEND_MESSAGE": "Send message"
     },
+    "TXT_PROFILE_PAGE": {
+        "POST_INPUT_LABEL": "Tell something new...",
+        "POST_BUTTON": "Post"
+    },
     "TXT_WORKSHOP_PAGE": {
         "CREATE_SONG_TITLE": "Create song right here",
         "UPLOAD_SONG_TITLE": "Upload song",

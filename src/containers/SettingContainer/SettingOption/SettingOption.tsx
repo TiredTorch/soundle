@@ -1,33 +1,27 @@
-import { FC, useCallback } from "react"
+import { FC } from "react"
 import { SettingOptionProps } from "./SettingOption.types"
-import { useTypedDispatch } from "@/redux"
-import { ActionCreatorWithoutPayload } from "@reduxjs/toolkit"
+import { Typography } from "@/components"
 
 export const SettingOption: FC<SettingOptionProps> = ({
     handleCheck,
     isChecked,
     title
 }) => {
-    const dispatch = useTypedDispatch()
-
-    const handleCheckInput = useCallback(
-      () => {
-        dispatch((handleCheck as ActionCreatorWithoutPayload<any>)())
-      },
-      [dispatch, handleCheck],
-    )
     
 
     return (
-        <div>
+        <div
+          className="flex justify-start items-center gap-[10px]"
+        >
             <input 
                 type="checkbox" 
                 checked={isChecked}
-                onChange={handleCheckInput}
+                onChange={handleCheck}
+                className="w-4 h-4 bg-gray-100 border-gray-300 rounded"
             />
-            <div>
+            <Typography className="text-[20px]">
                 {title}
-            </div>
+            </Typography>
         </div>
   )
 }

@@ -33,27 +33,27 @@ export const SettingContainer = () => {
         {
             isChecked: muteWorkshopSound,
             title: TXT_SETTING_PAGE.MUTE_SOUND,
-            handleCheck: dispatch(toggleMuteWorkshopSound())
+            handleCheck: () => dispatch(toggleMuteWorkshopSound())
         },
         {
             isChecked: enableNotifications,
             title: TXT_SETTING_PAGE.ENABLE_NOTIFICATIONS,
-            handleCheck: dispatch(toggleEnableNotifications())
+            handleCheck: () => dispatch(toggleEnableNotifications())
         },
         {
             isChecked: enableVisualisator,
             title: TXT_SETTING_PAGE.ENABLE_VISUALISATOR,
-            handleCheck: dispatch(toggleEnableVisualisator())
+            handleCheck: () => dispatch(toggleEnableVisualisator())
         },
         {
             isChecked: beAdorablePerson,
             title: TXT_SETTING_PAGE.ADORABLE,
-            handleCheck: dispatch(toggleBeAdorablePerson())
+            handleCheck: () => dispatch(toggleBeAdorablePerson())
         },
         {
             isChecked: showHistory,
             title: TXT_SETTING_PAGE.SHOW_HISTORY,
-            handleCheck: dispatch(toggleShowHistory())
+            handleCheck: () => dispatch(toggleShowHistory())
         }
     ], [
         muteWorkshopSound, 
@@ -67,12 +67,12 @@ export const SettingContainer = () => {
         <div
             className="w-full flex gap-[50px] overflow-y-auto p-[50px] pb-[120px] flex-col"
         >
-            {/* {settingOptions.map((item, index) => (
+            {settingOptions.map((item, index) => (
                 <SettingOption 
                     key={index}
                     {...item}
                 />
-            ))} */}
+            ))}
         </div>
     )
 }

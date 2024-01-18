@@ -1,3 +1,4 @@
+'use client'
 import { useMemo, useState } from "react"
 import { WorkshopState } from "@/types"
 import StateButtonsBox from "./StateButtonsBox/StateButtonsBox"
