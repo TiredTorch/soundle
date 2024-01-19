@@ -11,10 +11,78 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model users{
+model User {
   id Int @id @default(autoincrement())
   createdAt DateTime @default(now())
+
+  avatar String?
   name String
-  email String
+  email String @unique
   hash String
+
+  savedPosts Post[] @relation("SavedPosts")
+  createdPosts Post[] @relation("CreatedPosts")
+
+  savedSongs Song[] @relation("SavedSongs")
+  createdSongs Song[] @relation("CreatedSongs")
+
+  chatroom Chatroom @relation("Members", fields: [chatroomId], references: [id])
+  chatroomId Int
+
+  messagesSent Message[] @relation("Sender")
+  messagesReceived Message[] @relation("Receiver")
+}
+
+model Post {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  content String
+
+  author User @relation("CreatedPosts", fields: [authorId], references: [id])
+  authorId Int
+
+  savedBy User[] @relation("SavedPosts")
+}
+
+model Album {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  
+}
+
+model Song {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  sourse String
+
+  author User @relation("CreatedSongs", fields: [authorId], references: [id])
+  authorId Int
+
+  savedBy User[] @relation("SavedSongs")
+}
+
+model Chatroom {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  messages Message[]
+  members User[] @relation("Members")
+}
+
+model Message {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  content String
+
+  sender User @relation("Sender", fields: [senderId], references: [id])
+  senderId Int
+  receiver User @relation("Receiver", fields: [receiverId], references: [id])
+  receiverId Int
+
+  chatroom Chatroom @relation(fields: [chatroomId], references: [id])
+  chatroomId Int
 }
